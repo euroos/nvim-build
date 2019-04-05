@@ -6,6 +6,8 @@ map <F9> <Esc>:Unite menu<CR>
 map <F10> <Esc>:q!<CR>
 map <F12> <Esc>:! npm start <CR>
 
+map <C-Space> <Esc>:Buffers <CR>
+
 nnoremap x "_d
 nnoremap X "_D
 vnoremap x "_d
