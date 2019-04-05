@@ -1,2 +1,5 @@
 plugged/*
 .netrwhist
+.DS_Store
+.vimrc
+.nvimrc
