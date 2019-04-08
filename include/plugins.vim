@@ -19,6 +19,7 @@ call plug#begin()
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   else
     Plug 'Valloric/YouCompleteMe', {'do': './install.py --js-completer '}
+    Plug 'vim-ctrlspace/vim-ctrlspace'
   endif
 
   Plug 'sheerun/vim-polyglot'
