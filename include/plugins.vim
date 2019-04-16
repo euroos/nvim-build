@@ -34,6 +34,7 @@ endif
 
 so ~/.vim/include/plugins/ack.vim
 so ~/.vim/include/plugins/airline.vim
+so ~/.vim/include/plugins/fzf.vim
 so ~/.vim/include/plugins/nerdtree.vim
 so ~/.vim/include/plugins/startify.vim
 so ~/.vim/include/plugins/syntastic.vim
