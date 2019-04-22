@@ -15,7 +15,3 @@ vnoremap x "_d
 nnoremap xx "_dd
 nnoremap XX "_DD
 vnoremap xx "_dd
-
-" set keymap=russian-jcukenwin
-" set iminsert=0 " Чтобы при старте ввод был на английском, а не русском (start > i)
-" set imsearch=0 " Чтобы при старте поиск был на английском, а не русском (start > /)

@@ -24,6 +24,26 @@ call plug#begin()
 
   Plug 'sheerun/vim-polyglot'
   Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+
+  Plug 'prettier/vim-prettier', {
+    \ 'do': 'yarn install',
+    \ 'branch': 'release/1.x',
+    \ 'for': [
+      \ 'javascript',
+      \ 'typescript',
+      \ 'css',
+      \ 'less',
+      \ 'scss',
+      \ 'json',
+      \ 'graphql',
+      \ 'markdown',
+      \ 'vue',
+      \ 'lua',
+      \ 'php',
+      \ 'python',
+      \ 'ruby',
+      \ 'html',
+      \ 'swift' ] }
 call plug#end()
 
 if has('nvim')
@@ -39,3 +59,4 @@ so ~/.vim/include/plugins/nerdtree.vim
 so ~/.vim/include/plugins/startify.vim
 so ~/.vim/include/plugins/syntastic.vim
 so ~/.vim/include/plugins/unite.vim
+so ~/.vim/include/plugins/prettier.vim
