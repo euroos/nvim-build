@@ -21,8 +21,7 @@ call plug#begin()
     Plug 'Valloric/YouCompleteMe', {'do': './install.py --js-completer '}
     Plug 'vim-ctrlspace/vim-ctrlspace'
   endif
-  " Plug 'ludovicchabant/vim-gutentags'
-  " let g:gutentags_ctags_tagfile = '.tags'
+  Plug 'ludovicchabant/vim-gutentags'
 
   Plug 'sheerun/vim-polyglot'
   " Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
@@ -51,15 +50,13 @@ call plug#end()
 
 if has('nvim')
   so ~/.vim/include/plugins/deoplete.vim
-else
-  so ~/.vim/include/plugins/ycm.vim
 endif
 
 so ~/.vim/include/plugins/ack.vim
 so ~/.vim/include/plugins/airline.vim
-so ~/.vim/include/plugins/fzf.vim
 so ~/.vim/include/plugins/nerdtree.vim
 so ~/.vim/include/plugins/startify.vim
 so ~/.vim/include/plugins/syntastic.vim
 so ~/.vim/include/plugins/unite.vim
 so ~/.vim/include/plugins/prettier.vim
+so ~/.vim/include/plugins/gutentags.vim

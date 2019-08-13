@@ -14,8 +14,6 @@ set t_Co=256
 colorscheme vis256
 
 set wrap
-set laststatus=2                                    " показывать статус строку всегда
-set showtabline=2                                   " Показывать строку статуса всегда
 
 set smartindent                                     " включает умную растоновку
 set autoindent                                      " копирует отступ превыдущей строки
@@ -39,8 +37,3 @@ set nu                                              " номера строк
 set iminsert=0                                      " по умолчанию латинская раскладка
 set list                                            " скрытие символы
 set listchars=tab:¦·,space:·                        " вид оторажения таба и пробела
-
-set foldenable                                      " отклключить фолдинг по умолчанию
-set foldmethod=syntax                               " определять блоки на основе синтаксиса файла
-set foldmethod=indent                               " определять блоки на основе отступов
-set foldlevel=100                                   " Первый уровень вложенности открыт, остальные закрыты
