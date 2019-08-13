@@ -1,5 +1,7 @@
 plugged/*
+submodules/
 .netrwhist
 .DS_Store
 .vimrc
 .nvimrc
+.tags
