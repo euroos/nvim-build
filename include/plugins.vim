@@ -21,9 +21,12 @@ call plug#begin()
     Plug 'Valloric/YouCompleteMe', {'do': './install.py --js-completer '}
     Plug 'vim-ctrlspace/vim-ctrlspace'
   endif
+  " Plug 'ludovicchabant/vim-gutentags'
+  " let g:gutentags_ctags_tagfile = '.tags'
 
   Plug 'sheerun/vim-polyglot'
-  Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+  " Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
+  " Plug 'majutsushi/tagbar'
 
   Plug 'prettier/vim-prettier', {
     \ 'do': 'yarn install',

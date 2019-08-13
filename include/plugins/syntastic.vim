@@ -8,7 +8,7 @@ let g:syntastic_style_error_symbol = '✖'
 let g:syntastic_style_warning_symbol = '►'
 
 " let g:syntastic_quiet_messages = {"type":"style"}   " скрыть сообщения типа стиль
-let g:syntastic_auto_jump = 2                       " переход к ошибке
+let g:syntastic_auto_jump = 0 " переход к ошибке
 
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_javascript_checkers = ['eslint'] 

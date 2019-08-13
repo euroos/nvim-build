@@ -1,5 +1,3 @@
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --vimgrep --ignore-dir logs --ignore-dir node_modules '
 endif
-
-let g:ack_default_options = " -s -H --nocolor --nogroup --column --smart-case --follow --ignore-dir={logs/,node_modules/,games/}"

@@ -15,3 +15,8 @@ vnoremap x "_d
 nnoremap xx "_dd
 nnoremap XX "_DD
 vnoremap xx "_dd
+
+" set keymap=russian-jcukenwin
+" set iminsert=0
+" set imsearch=0
+" highlight lCursor guifg=NONE guibg=Cyan
