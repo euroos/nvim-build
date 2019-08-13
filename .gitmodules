@@ -1,0 +1,3 @@
+[submodule "colors"]
+	path = colors
+	url = git@github.com:euroos/vis256.git
