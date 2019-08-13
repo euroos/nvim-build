@@ -4,3 +4,6 @@
 [submodule "autoload/airline/themes"]
 	path = autoload/airline/themes
 	url = git@github.com:euroos/vis256-airline.git
+[submodule "include/plugins"]
+	path = include/plugins
+	url = git@github.com:euroos/vim-plug-conf.git
