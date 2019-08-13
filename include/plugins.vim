@@ -8,7 +8,7 @@ call plug#begin()
   Plug 'scrooloose/syntastic'
 
   Plug 'tpope/vim-fugitive'
-  Plug 'junegunn/gv.vim'
+  " Plug 'junegunn/gv.vim'
   Plug 'airblade/vim-gitgutter'
 
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -24,7 +24,6 @@ call plug#begin()
   Plug 'ludovicchabant/vim-gutentags'
 
   Plug 'sheerun/vim-polyglot'
-  " Plug 'ternjs/tern_for_vim', {'do': 'npm install'}
   " Plug 'majutsushi/tagbar'
 
   Plug 'prettier/vim-prettier', {
