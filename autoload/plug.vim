@@ -8,7 +8,7 @@
 "
 " Edit your .vimrc
 "
-"   call plug#begin('~/.vim/plugged')
+"   call plug#begin('~/.vim/plugins/source')
 "
 "   " Make sure you use single quotes
 "
@@ -34,7 +34,7 @@
 "   " Plugin options
 "   Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 "
-"   " Plugin outside ~/.vim/plugged with post-update hook
+"   " Plugin outside ~/.vim/plugins/source with post-update hook
 "   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 "
 "   " Unmanaged plugin (manually installed and updated)
@@ -117,7 +117,7 @@ function! plug#begin(...)
   elseif exists('g:plug_home')
     let home = s:path(g:plug_home)
   elseif !empty(&rtp)
-    let home = s:path(split(&rtp, ',')[0]) . '/plugged'
+    let home = s:path(split(&rtp, ',')[0]) . '/plugins/source'
   else
     return s:err('Unable to determine plug home. Try calling plug#begin() with a path argument.')
   endif

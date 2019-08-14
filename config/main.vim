@@ -1,6 +1,7 @@
 filetype plugin indent on
 syntax on
 set nocompatible
+
 set mouse=a
 set exrc
 set hidden

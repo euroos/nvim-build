@@ -48,14 +48,14 @@ call plug#begin()
 call plug#end()
 
 if has('nvim')
-  so ~/.vim/include/plugins/deoplete.vim
+  so ~/.vim/plugins/config/deoplete.vim
 endif
 
-so ~/.vim/include/plugins/ack.vim
-so ~/.vim/include/plugins/airline.vim
-so ~/.vim/include/plugins/nerdtree.vim
-so ~/.vim/include/plugins/startify.vim
-so ~/.vim/include/plugins/syntastic.vim
-so ~/.vim/include/plugins/unite.vim
-so ~/.vim/include/plugins/prettier.vim
-so ~/.vim/include/plugins/gutentags.vim
+so ~/.vim/plugins/config/ack.vim
+so ~/.vim/plugins/config/airline.vim
+so ~/.vim/plugins/config/nerdtree.vim
+so ~/.vim/plugins/config/startify.vim
+so ~/.vim/plugins/config/syntastic.vim
+so ~/.vim/plugins/config/unite.vim
+so ~/.vim/plugins/config/prettier.vim
+so ~/.vim/plugins/config/gutentags.vim
