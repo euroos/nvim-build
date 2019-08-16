@@ -2,7 +2,7 @@ function! NERDTreeToggleInCurDir()
     if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
         exe ":NERDTreeClose"
     else
-        if &filetype == 'startify'
+        if !exists(&filetype) || &filetype == 'startify'
             exe ":NERDTreeToggle"
         else
             exe ":NERDTreeFind"

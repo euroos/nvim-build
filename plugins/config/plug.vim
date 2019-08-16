@@ -1,16 +1,17 @@
-call plug#begin('~/.vim/plugins/source')
-
 call plug#begin()
-  Plug 'bling/vim-airline'
-  Plug 'tomtom/tcomment_vim'
-
   if exists("g:plugins_full_list") && g:plugins_full_list == 1
+      call plug#begin('~/.vim/plugins/source')
+      Plug 'mhinz/vim-startify'
+      Plug 'vim-ctrlspace/vim-ctrlspace'
+
       if has('nvim')
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
       else
         Plug 'Valloric/YouCompleteMe', {'do': './install.py --js-completer '}
       endif
 
+      Plug 'bling/vim-airline'
+      Plug 'tomtom/tcomment_vim'
       Plug 'scrooloose/nerdtree'
       Plug 'ludovicchabant/vim-gutentags'
       Plug 'tpope/vim-fugitive'
@@ -37,18 +38,10 @@ call plug#begin()
           \ 'ruby',
           \ 'html',
           \ 'swift' ] }
-    endif
-
-
-
-
-  Plug 'jlanzarotta/bufexplorer'
-    let g:bufExplorerSplitHorzSize=5
-    let g:bufExplorerDefaultHelp=0
-  Plug 'ctrlpvim/ctrlp.vim'
-
-  if exists("g:plugins_full_list") && g:plugins_full_list == 1
-      Plug 'mhinz/vim-startify'
-      Plug 'vim-ctrlspace/vim-ctrlspace'
+  else
+      call plug#begin('~/.vim/plugins/preinstall')
+      Plug 'bling/vim-airline'
+      Plug 'tomtom/tcomment_vim'
+      Plug 'scrooloose/nerdtree'
   endif
 call plug#end()
