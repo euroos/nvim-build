@@ -1,4 +1,5 @@
 plugins/source/*
+session/*
 temp/*
 
 .netrwhist
