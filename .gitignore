@@ -1,5 +1,8 @@
-plugged/*
+plugins/source/*
+temp/*
+
 .netrwhist
 .DS_Store
 .vimrc
 .nvimrc
+.tags
