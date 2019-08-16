@@ -1,5 +1,9 @@
-plugged/*
+plugins/source/*
+session/*
+temp/*
+
 .netrwhist
 .DS_Store
 .vimrc
 .nvimrc
+.tags
