@@ -2,7 +2,7 @@ function! NERDTreeToggleInCurDir()
     if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
         exe ":NERDTreeClose"
     else
-        if !exists(&filetype) || &filetype == 'startify'
+        if &filetype == 'startify' || &filetype == ''
             exe ":NERDTreeToggle"
         else
             exe ":NERDTreeFind"
@@ -14,3 +14,4 @@ map <F2> <Esc>: :call NERDTreeToggleInCurDir()<CR>
 
 let NERDTreeMinimalUI=1
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
