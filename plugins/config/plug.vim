@@ -7,7 +7,9 @@ call plug#begin()
       if has('nvim')
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
       else
-        Plug 'Valloric/YouCompleteMe', {'do': './install.py --js-completer '}
+        Plug 'Shougo/deoplete.nvim'
+        Plug 'roxma/nvim-yarp'
+        Plug 'roxma/vim-hug-neovim-rpc'
       endif
 
       Plug 'bling/vim-airline'

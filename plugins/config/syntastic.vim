@@ -11,4 +11,4 @@ let g:syntastic_auto_jump = 0
 
 let g:syntastic_enable_perl_checker = 1
 let g:syntastic_javascript_checkers = ['eslint'] 
-let g:syntastic_typescript_checkers = ['tsc', 'tslint', 'eslint']
+let g:syntastic_typescript_checkers = ['eslint']
