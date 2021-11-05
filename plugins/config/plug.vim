@@ -3,15 +3,6 @@ call plug#begin()
       call plug#begin('~/.vim/plugins/source')
       Plug 'mhinz/vim-startify'
       Plug 'vim-ctrlspace/vim-ctrlspace'
-
-      if has('nvim')
-        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-      else
-        Plug 'Shougo/deoplete.nvim'
-        Plug 'roxma/nvim-yarp'
-        Plug 'roxma/vim-hug-neovim-rpc'
-      endif
-
       Plug 'bling/vim-airline'
       Plug 'tomtom/tcomment_vim'
       Plug 'scrooloose/nerdtree'
@@ -23,7 +14,6 @@ call plug#begin()
       Plug 'sheerun/vim-polyglot'
       Plug 'prettier/vim-prettier', {
         \ 'do': 'yarn install',
-        \ 'branch': 'release/1.x',
         \ 'for': [
           \ 'javascript',
           \ 'typescript',
@@ -40,6 +30,14 @@ call plug#begin()
           \ 'ruby',
           \ 'html',
           \ 'swift' ] }
+
+      if has('nvim')
+        Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+      else
+        Plug 'Shougo/deoplete.nvim'
+        Plug 'roxma/nvim-yarp'
+        Plug 'roxma/vim-hug-neovim-rpc'
+      endif
   else
       call plug#begin('~/.vim/plugins/preinstall')
       Plug 'bling/vim-airline'

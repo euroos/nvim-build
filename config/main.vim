@@ -19,8 +19,8 @@ set wrap
 set smartindent                                     " включает умную растоновку
 set autoindent                                      " копирует отступ превыдущей строки
 set pastetoggle=                                    " При вставке фрагмента сохраняет отступы
-set tabstop=4                                       " размер отступа в пробелах
-set shiftwidth=4                                    " размер автоотступа
+set tabstop=2                                       " размер отступа в пробелах
+set shiftwidth=2                                    " размер автоотступа
 set expandtab                                       " замена символа тебуляции на пробелы
 
 
